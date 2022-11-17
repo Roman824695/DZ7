@@ -3,12 +3,6 @@
     Console.Write(message + "->");
     return Convert.ToInt32(Console.ReadLine());
 }
-
-int line = ReadInt("Введите число строк");
-int element = ReadInt("Введите число элементов");
-
-
-
 void Array(int line, int element)
 {
 double[,] array = new double[line, element];
@@ -25,4 +19,4 @@ for(int i = 0; i < line; i++)
 }
 }
 
-Array(line, element);
+Array(ReadInt("Введите число строк"), ReadInt("Введите число элементов"));
